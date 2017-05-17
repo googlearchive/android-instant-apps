@@ -1,0 +1,14 @@
+<resources>
+    <string name="btn_send_ecommerce_event">Send Purchase Event</string>
+    <string name="lbl_order_number">Order number: </string>
+    <string name="lbl_order_amount">Order amount: </string>
+    <string name="lbl_currency">Payment currency: </string>
+    <string name="txt_not_initialized">Not initialized</string>
+
+    <string name="analytics_user_prop">app_type</string>
+    <string name="lbl_status_text" formatted="false">This app is running as %s.</string>
+    <string name="order_details_format" formatted="false">Order %d: %.2f %s sent</string>
+    <string name="status_installed">installed</string>
+    <string name="status_instant">instant</string>
+
+</resources>

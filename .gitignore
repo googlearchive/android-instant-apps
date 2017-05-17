@@ -1,0 +1,5 @@
+build/
+wh.properties
+.DS_Store
+.gradle
+captures/

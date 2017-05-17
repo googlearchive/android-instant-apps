@@ -1,0 +1,2 @@
+include ':installed', ':instant',
+        ':features:base', ':features:hello', ':features:bye'
