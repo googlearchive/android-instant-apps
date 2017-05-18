@@ -17,36 +17,6 @@ After you have added the sample's package name to your Firebase project,
 download the Firebase project's google-services.json file. Place the file in
 the `base/` module of this sample.
 
-### Get the Google App ID
-
-Open the google-services.json file that you downloaded and look for the
-following block:
-
-```
-...
-
-"client_info": {
-    ...
-    "android_client_info": {
-        "package_name": "com.example.android.instant.analytics"
-    }
-},
-
-...
-```
-
-The `client_info` block has a key named `mobilesdk_app_id`. The value of the
-`mobilesdk_app_id` key is your `google_app_id`.
-
-Once you have this value, open up the `base/src/main/res/google_app_id.xml` and
-replace the value of the `google_app_id` resource with this value.
-
-```
-<resources>
-    <string name="google_app_id" translatable="false">YOUR_API_KEY_HERE</string>
-</resources>
-```
-
 ## License
 
 ```
