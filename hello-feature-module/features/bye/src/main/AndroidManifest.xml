@@ -15,34 +15,33 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.instantapps.samples.flavors.feature.bye">
+    package="com.instantappsamples.feature.bye">
 
     <application>
+
         <activity
             android:name=".GoodbyeActivity"
-            android:label="@string/title_activity_goodbye">
+            android:label="@string/title_activity_goodbye"
+            android:theme="@style/AppTheme">
 
             <intent-filter
                 android:autoVerify="true"
                 android:order="1">
-                <action android:name="android.intent.action.VIEW" />
 
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data
-                    android:host="hello-flavors.instantappsample.com"
+                    android:host="hello-feature.instantappsample.com"
                     android:pathPrefix="/goodbye"
                     android:scheme="https" />
+
                 <data
-                    android:host="hello-flavors.instantappsample.com"
+                    android:host="hello-feature.instantappsample.com"
                     android:pathPrefix="/goodbye"
                     android:scheme="http" />
-
             </intent-filter>
-
         </activity>
-
     </application>
-
 </manifest>

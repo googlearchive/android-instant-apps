@@ -26,7 +26,7 @@
             android:supportsRtl="true">
 
         <activity
-                android:name="com.google.android.instantapps.samples.hello.feature.HelloActivity"
+                android:name=".HelloActivity"
                 android:label="@string/title_activity_hello">
 
             <intent-filter>
@@ -49,7 +49,7 @@
                     android:value="https://hello.instantappsample.com/hello" />
         </activity>
         <activity
-                android:name="com.google.android.instantapps.samples.hello.feature.GoodbyeActivity"
+                android:name=".GoodbyeActivity"
                 android:label="@string/title_activity_goodbye">
             <intent-filter
                     android:autoVerify="true"
