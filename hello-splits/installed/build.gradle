@@ -21,6 +21,7 @@ android {
     buildToolsVersion rootProject.buildTools
 
     defaultConfig {
+        applicationId "com.google.android.instantapps.samples.hellosplit"
         minSdkVersion rootProject.minSdk
         targetSdkVersion rootProject.compileSdk
         versionCode rootProject.versionCode

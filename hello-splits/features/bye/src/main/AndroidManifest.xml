@@ -15,4 +15,35 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.instantappsample.library.bye" />
+    package="com.instantappsample.library.bye">
+
+    <application>
+
+        <activity
+            android:name="com.instantappsamples.feature.bye.GoodbyeActivity"
+            android:label="@string/title_activity_goodbye"
+            android:theme="@style/AppTheme">
+
+            <intent-filter
+                android:autoVerify="true"
+                android:order="1">
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="hello-split.instantappsample.com"
+                    android:pathPrefix="/goodbye"
+                    android:scheme="https" />
+                <data
+                    android:host="hello-split.instantappsample.com"
+                    android:pathPrefix="/goodbye"
+                    android:scheme="http" />
+
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
