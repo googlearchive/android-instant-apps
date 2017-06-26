@@ -40,9 +40,10 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:host="hello.instantappsample.com"
-                      android:scheme="https"
-                      android:pathPrefix="/hello" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="hello.instantappsample.com" />
+                <data android:pathPrefix="/hello" />
             </intent-filter>
             <meta-data
                     android:name="default-url"
@@ -58,10 +59,10 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data
-                        android:host="hello.instantappsample.com"
-                        android:scheme="https"
-                        android:pathPrefix="/goodbye" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="hello.instantappsample.com" />
+                <data android:pathPrefix="/goodbye" />
             </intent-filter>
         </activity>
 

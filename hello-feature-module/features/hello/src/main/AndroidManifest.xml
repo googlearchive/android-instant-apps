@@ -36,15 +36,11 @@
 
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data
-                    android:host="hello-feature.instantappsample.com"
-                    android:pathPrefix="/hello"
-                    android:scheme="https" />
-                <data
-                    android:host="hello-feature.instantappsample.com"
-                    android:pathPrefix="/hello"
-                    android:scheme="http" />
 
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="hello-feature.instantappsample.com" />
+                <data android:pathPrefix="/hello" />
             </intent-filter>
 
             <meta-data

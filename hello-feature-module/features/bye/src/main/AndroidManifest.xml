@@ -32,15 +32,11 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data
-                    android:host="hello-feature.instantappsample.com"
-                    android:pathPrefix="/goodbye"
-                    android:scheme="https" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="hello-feature.instantappsample.com" />
+                <data android:pathPrefix="/goodbye" />
 
-                <data
-                    android:host="hello-feature.instantappsample.com"
-                    android:pathPrefix="/goodbye"
-                    android:scheme="http" />
             </intent-filter>
         </activity>
     </application>

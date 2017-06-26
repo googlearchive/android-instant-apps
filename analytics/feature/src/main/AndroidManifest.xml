@@ -31,8 +31,11 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:host="instant.android.example.com" android:pathPattern="/analytics"
-                    android:scheme="https" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:host="instant.android.example.com" />
+                <data android:pathPattern="/analytics" />
+
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
