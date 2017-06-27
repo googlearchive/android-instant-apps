@@ -23,7 +23,7 @@ ext {
     minSdk = 23
     versionCode = 1
     versionName = "1.0"
-    supportLib = "25.3.1"
+    supportLib = "25.4.0"
     glide = "3.7.0"
     retrofit = "1.9.0"
     keystoreProperties = new Properties()
@@ -42,9 +42,9 @@ buildscript {
 }
 allprojects {
     repositories {
+        jcenter()
         maven {
             url 'https://maven.google.com'
         }
-        jcenter()
     }
 }
