@@ -44,7 +44,8 @@ allprojects {
 ext {
     buildTools = "26.0.0"
     compileSdk = 26
-    minSdk = 23
+    minSdk = 15
+    minSdkInstant = 23
     versionCode = 1
     versionName = "1.0"
     supportLib = "25.4.0"

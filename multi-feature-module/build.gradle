@@ -20,7 +20,8 @@ ext {
     buildTools = "26.0.0-rc2"
     compileSdk = 25
     targetSdk = 25
-    minSdk = 23
+    minSdk = 15
+    minSdkInstant = 23
     versionCode = 1
     versionName = "1.0"
     supportLib = "25.4.0"
