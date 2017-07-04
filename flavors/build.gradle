@@ -17,14 +17,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+        google()
         jcenter()
-        maven {
-            url 'https://maven.google.com'
-        }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-alpha1'
+        classpath 'com.android.tools.build:gradle:3.0.0-alpha6'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -33,16 +31,14 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         jcenter()
-        maven {
-            url 'https://maven.google.com'
-        }
     }
 }
 
 ext {
-    buildTools = '26.0.0-rc2'
-    compileSdk = 25
+    buildTools = '26.0.0'
+    compileSdk = 26
     minSdk = 15
     minSdkInstant = 23
     versionCode = 1
