@@ -14,6 +14,11 @@
   ~ limitations under the License.
   -->
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest package="com.google.android.instantapps.samples.feature.hello"
+          xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:instant="http://schemas.android.com/instantapps"
-          package="com.google.android.instantapps.samples.feature.hello" />
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application  tools:replace="android:name" android:name="com.instantappsamples.feature.installed.InstalledApp"/>
+
+</manifest>

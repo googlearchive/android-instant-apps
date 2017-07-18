@@ -17,10 +17,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.instantappsamples.feature.bye">
 
-    <application>
+    <application android:name="com.instantappsamples.feature.base.ByeApplication">
 
         <activity
-            android:name=".GoodbyeActivity"
+            android:name="com.instantappsamples.feature.bye.GoodbyeActivity"
             android:label="@string/title_activity_goodbye"
             android:theme="@style/AppTheme">
 
