@@ -41,7 +41,7 @@ task clean(type: Delete) {
 }
 
 ext {
-    buildTools = '26.0.0'
+    buildTools = '26.0.1'
     compileSdk = 26
     minSdkInstant = 23
     minSdk = 15
