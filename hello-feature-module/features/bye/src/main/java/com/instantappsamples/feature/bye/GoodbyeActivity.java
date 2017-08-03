@@ -32,6 +32,6 @@ public class GoodbyeActivity extends AppCompatActivity {
 
         Log.e("laurent", "class : " + getApplication().getClass().getName());
 
-        ByeApplication application = (ByeApplication) getApplication();
+        ((Toto) getApplication()).sayToto();
     }
 }

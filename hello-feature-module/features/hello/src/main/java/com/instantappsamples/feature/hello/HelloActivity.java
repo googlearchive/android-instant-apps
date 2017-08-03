@@ -23,6 +23,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.instantappsamples.feature.bye.Toto;
+
 /**
  * This Activity displays a simple hello world text.
  */
@@ -44,6 +46,8 @@ public class HelloActivity extends AppCompatActivity {
         });
 
         Log.e("laurent", "class : " + getApplication().getClass().getName());
+
+        ((Toto) getApplication()).sayToto();
     }
 
 }
