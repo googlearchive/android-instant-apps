@@ -27,15 +27,16 @@ android {
         versionName rootProject.versionName
     }
 
-    dataBinding {
-        enabled true
-    }
+//    dataBinding {
+//        enabled true
+//    }
 
     signingConfigs {
         release {
             keyAlias rootProject.keystoreProperties['keyAlias']
             keyPassword rootProject.keystoreProperties['keyPassword']
-            storeFile file(rootProject.keystoreProperties['storeFile'])
+            storeFile file("${System.properties['user.home']}${File.separator}.android${File.separator}debug.keystore")
+
             storePassword rootProject.keystoreProperties['storePassword']
         }
     }
