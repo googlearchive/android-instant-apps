@@ -6,11 +6,11 @@ in two features which can be individually launched on a device.
 
 ## Getting started
 
+# CURRENTLY THIS SAMPLE IS BROKEN DUE TO A [KNOWN BUG](https://issuetracker.google.com/63814741)
+
 ### Prerequisites
 
 1. Android Studio 3.0 Preview version
-
-2. Update `keystore.properties` file to build the signed release version.
 
 ### Android Studio Instructions
 
