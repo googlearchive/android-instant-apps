@@ -35,4 +35,5 @@ android {
 dependencies {
     api "com.android.support:appcompat-v7:${rootProject.supportLib}"
     api "com.android.support.constraint:constraint-layout:${rootProject.constraintLayout}"
+    application project(':installed')
 }

@@ -36,6 +36,7 @@ dependencies {
     api "com.android.support:appcompat-v7:${rootProject.supportLib}"
     api "com.google.firebase:firebase-core:${rootProject.firebaseVer}"
     api "com.google.android.instantapps:instantapps:${rootProject.instantAppsVer}"
+    application project(':installed')
 }
 
 // Add to the bottom of the file

@@ -36,4 +36,5 @@ android {
 
 dependencies {
     api "com.android.support:appcompat-v7:${rootProject.supportLib}"
+    application project(':installed')
 }
