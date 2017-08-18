@@ -14,4 +14,5 @@
   ~ limitations under the License.
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.instant.analytics.app" />
+    package="com.example.android.instant.analytics.app"
+    android:targetSandboxVersion="2"/>

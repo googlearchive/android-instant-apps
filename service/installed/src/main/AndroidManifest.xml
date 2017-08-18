@@ -17,4 +17,5 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:instant="http://schemas.android.com/instantapps"
-          package="com.instantappsample.service" />
+          package="com.instantappsample.service"
+          android:targetSandboxVersion="2"/>
