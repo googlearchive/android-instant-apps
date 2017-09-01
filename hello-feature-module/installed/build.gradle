@@ -21,7 +21,6 @@ android {
     buildToolsVersion rootProject.buildTools
 
     defaultConfig {
-        applicationId "com.google.android.instantapps.samples.hellofeature"
         minSdkVersion rootProject.minSdk
         targetSdkVersion rootProject.compileSdk
         versionCode rootProject.versionCode

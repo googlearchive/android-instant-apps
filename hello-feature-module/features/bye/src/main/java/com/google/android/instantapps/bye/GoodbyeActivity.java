@@ -14,18 +14,23 @@
  * limitations under the License.
  */
 
-package com.instantappsamples.feature.bye;
+package com.google.android.instantapps.bye;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 
-/** Simple activity that says goodbye. */
+/**
+ * Simple activity that says goodbye.
+ */
 public class GoodbyeActivity extends AppCompatActivity {
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_goodbye);
-  }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_goodbye);
+
+        Log.d("Neige", "GoodbyeActivity Application + " + getApplication().getClass().getName());
+    }
 }
