@@ -15,9 +15,12 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.google.android.instantapps"
           android:targetSandboxVersion="2">
 
-    <application android:name=".InstalledApplication" />
+    <application
+        android:name=".InstalledApplication"
+        tools:replace="android:name" />
 
 </manifest>
