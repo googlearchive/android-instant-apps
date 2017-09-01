@@ -16,4 +16,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.google.android.instantapps"
-          android:targetSandboxVersion="2" />
+          android:targetSandboxVersion="2">
+
+    <application android:name=".InstalledApplication" />
+
+</manifest>
