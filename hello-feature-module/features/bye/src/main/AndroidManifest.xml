@@ -17,7 +17,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.google.android.instantapps.bye">
 
-    <application>
+    <application android:name="com.google.android.instantapps.bye.ByeApplication">
 
         <activity
             android:name=".GoodbyeActivity"
