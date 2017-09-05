@@ -15,12 +15,12 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.instantappsamples.feature.hello">
+          package="com.google.android.instantapps.hello">
 
     <application>
 
         <activity
-            android:name="com.instantappsamples.feature.hello.HelloActivity"
+            android:name=".HelloActivity"
             android:label="@string/title_activity_hello"
             android:theme="@style/AppTheme">
 

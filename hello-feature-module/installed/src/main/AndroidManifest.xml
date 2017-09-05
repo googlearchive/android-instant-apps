@@ -15,6 +15,12 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:instant="http://schemas.android.com/instantapps"
-          package="com.google.android.instantapps.samples.feature.hello"
-          android:targetSandboxVersion="2"/>
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.google.android.instantapps"
+          android:targetSandboxVersion="2">
+
+    <application
+        android:name=".InstalledApplication"
+        tools:replace="android:name" />
+
+</manifest>

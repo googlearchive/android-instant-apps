@@ -15,9 +15,9 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.instantappsamples.feature.bye">
+          package="com.google.android.instantapps.bye">
 
-    <application>
+    <application android:name="com.google.android.instantapps.bye.ByeApplication">
 
         <activity
             android:name=".GoodbyeActivity"
@@ -29,6 +29,7 @@
                 android:order="1">
 
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
 
