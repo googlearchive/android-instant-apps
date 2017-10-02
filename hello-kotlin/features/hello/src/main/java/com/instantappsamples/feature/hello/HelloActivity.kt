@@ -20,6 +20,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Button
 
 /**
  * This Activity displays a simple hello world text.
@@ -29,7 +30,7 @@ class HelloActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hello)
-        findViewById(R.id.button).setOnClickListener {
+        findViewById<Button>(R.id.button).setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://hello-feature.instantappsample.com/goodbye")).apply {
                 `package` = packageName

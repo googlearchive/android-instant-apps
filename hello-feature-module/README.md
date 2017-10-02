@@ -1,13 +1,20 @@
-# Android Instant Apps - Hello World sample app
+# Android Instant Apps - Feature Module sample
 
-This sample app demonstrates the building of an installed and an instant app
-with the same behaviors. The functionality of the instant app is built
-in two features which can be individually installed and launched on a device.
+This sample introduces feature modules to the Hello World sample.
 
-## Run the instant app
+Code and resources that are only required within a single feature module
+can be found in the corresponding feature modules.
 
-To run your instant app, select the instant module in run configurations and edit it so it uses
-either of the entry urls for the app.
+* `features/base` -> Shared
+* `features/hello` -> Hello feature
+* `features/bye` -> Bye feature
+
+## Launch URLs
+
+```
+https://hello-feature.instantappsample.com/hello -> HelloActivity
+https://hello-feature.instantappsample.com/goodbye -> GoodbyeActivity
+```
 
 ## License
 

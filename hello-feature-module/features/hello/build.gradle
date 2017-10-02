@@ -34,11 +34,4 @@ android {
 
 dependencies {
     implementation project(':features:base')
-    api ('com.google.android.instantapps:instantapps:1.0.0') {
-        // This is to exclude the transitive dependencies for the support library otherwise
-        // the project doesn't compile with the error below.
-        //
-        // > Android dependency 'com.android.support:support-v4' has different version for the compile (23.3.0) and runtime (25.3.1) classpath. You should manually set the same version via DependencyResolution
-        exclude group: 'com.android.support'
-    }
 }

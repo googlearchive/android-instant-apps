@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_version">You\'re using the Cookie API from: </string>
+    <string name="cookie_api_hint">Add some text to store</string>
+    <string name="store_cookie">Store Cookie</string>
+    <string name="read_cookie">Read Cookie</string>
+    <string name="clear_cookie">Clear cookie</string>
+</resources>

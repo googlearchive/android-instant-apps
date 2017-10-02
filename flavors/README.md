@@ -1,16 +1,35 @@
-# Android Instant Apps - Hello World sample app
+# Android Instant Apps - Flavors Sample
 
-This sample app demonstrates the building of an installable app and an instant app
-with the same behaviors. The functionality of the instant app is split
-in two features which can be individually installed and launched on a device.
+This sample introduces the usage of product flavors within
+an Instant App.
 
-Further this sample also uses the concept of build flavors.
-The two flavors are "free" and "paid".
+There are two flavors available:
 
-## Run the instant app
+* `free`
+* `paid`
 
-To run your instant app, select the instant module in run configurations and edit it so it uses
-either of the entry urls for the app.
+These flavors are declared within `features/base/build.gradle`.
+The implementation details can be found within `features/base/src`.
+
+Each feature module that depends on the base feature module will have to declare
+at least the same product flavors within its `build.gradle` file.
+
+## Launch URLs
+
+```
+https://hello-flavors.instantappsample.com/hello -> HelloActivity
+https://hello-flavors.instantappsample.com/goodbye -> GoodbyeActivity
+```
+
+## Build paths
+
+The build paths for this sample differ from the default build path.
+Depending on the flavor, the debug build output is within either of the following:
+
+```
+instant/build/outputs/apk/free/debug
+instant/build/outputs/apk/paid/debug
+```
 
 ## License
 

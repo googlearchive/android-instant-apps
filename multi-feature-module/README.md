@@ -1,32 +1,18 @@
 # Android Instant Apps - Multi feature sample app
 
-This sample app demonstrates the building of an installable and an instant app
+This sample app demonstrates building an installable and an instant app
 with the same behaviors. The functionality of the instant app is split
-in two features which can be individually launched on a device.
+in two features, which can be individually launched on a device.
 
 ## Getting started
 
 # CURRENTLY THIS SAMPLE IS BROKEN DUE TO A [KNOWN BUG](https://issuetracker.google.com/63814741)
 
-### Prerequisites
-
-1. Android Studio 3.0 Preview version
-
-### Android Studio Instructions
-
-1. Import project.
-2. Build.
-3. Open "Edit Configurations" in target selection dropdown. Type "https://multi-feature.instantappsample.com/main" in the URL field of "Launch Options section.
-4. Run.
-
-### Command Line Instructions
-
-#### Run on Android O
+## Launch URL
 
 ```
-$ unzip instantapp/build/outputs/apk/debug/instantapp-debug.zip
-$ adb install-multiple -r -t --ephemeral *.apk
-$ adb shell am start -a android.intent.action.VIEW -c android.intent.category.BROWSABLE -d https://multi-feature.instantappsample.com/main
+https://multi-feature.instantappsample.com/main
+https://multi-feature.instantappsample.com/detail
 ```
 
 ## License

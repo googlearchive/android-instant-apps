@@ -1,7 +1,8 @@
 #!/bin/bash
 
 set -e  # Exit immediately if a command exits with a non-zero status.
-projects=("analytics" "flavors" "hello" "hello-feature-module" "hello-kotlin" "service")
+projects=("analytics" "config-splits" "cookie-api" "flavors"
+    "hello-feature-module" "hello-java" "hello-kotlin" "service")
 
 for p in ${projects[@]}; do
    echo

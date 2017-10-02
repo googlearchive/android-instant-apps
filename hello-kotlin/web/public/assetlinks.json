@@ -1,7 +1,0 @@
-[{
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target" : { "namespace": "android_app",
-        "package_name": "com.instantappsample.hellogoodbye",
-        "sha256_cert_fingerprints":
-        ["16:C4:11:C1:52:EA:58:87:AD:03:96:41:AD:C0:30:BF:8D:BA:01:98:D4:05:1C:3D:E2:17:C6:18:73:13:4B:0D"] }
-}]

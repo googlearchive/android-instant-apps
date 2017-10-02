@@ -1,13 +1,16 @@
-# Android Instant Apps - Hello Kotlin sample app
+# Android Instant Apps - Hello World
 
-This sample shows using Kotlin as language for the Hello multi features sample instead of Java.
-The functionality of the instant app is built in two features which can be individually
+This sample app demonstrates how to build an installed and an instant app
+with the same behaviors by using Kotlin.
+The functionality of the instant app is built in two features, which can be individually
 installed and launched on a device.
 
-## Run the instant app
+## Launch URLs
 
-To run your instant app, select the instant module in run configurations and edit it so it uses
-either of the entry urls for the app.
+```
+https://hello.instantappsample.com/hello -> HelloActivity
+https://hello.instantappsample.com/bye -> GoodbyeActivity
+```
 
 ## License
 

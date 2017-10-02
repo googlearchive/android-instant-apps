@@ -22,7 +22,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-beta2'
+        classpath 'com.android.tools.build:gradle:3.0.0-beta6'
         classpath 'com.google.gms:google-services:3.1.0'
     }
 }
@@ -39,13 +39,13 @@ task clean(type: Delete) {
 }
 
 ext {
-    buildTools = '26.0.0'
+    buildTools = '26.0.1'
     compileSdk = 26
     minSdk = 15
     minSdkInstant = 23
     versionCode = 1
     versionName = '1.0'
-    supportLib = '25.3.1'
+    supportLib = '26.1.0'
     firebaseVer = '10.2.4'
     instantAppsVer = '1.0.0'
 }

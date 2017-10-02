@@ -1,15 +1,17 @@
-# Android Instant Apps - Foreground Service sample
+# Android Instant Apps - Service Sample
 
-This sample demonstrates how to create a started or bound [foreground service](https://developer.android.com/guide/components/services.html#Foreground)
+This sample demonstrates how to create a started or a bound [service](https://developer.android.com/guide/components/services.html)
 within Android Instant Apps.
 
 ## What this sample does
 
 The sample showcases how to start and bind a service.
 
-## Run the instant app
+## Launch URL
 
-To run your instant app, select the instant module in run configurations and hit the run button.
+```
+https://service.instantappsample.com
+```
 
 ## License
 

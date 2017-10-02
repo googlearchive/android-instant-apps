@@ -17,6 +17,10 @@ After you have added the sample's package name to your Firebase project,
 download the Firebase project's google-services.json file. Place the file in
 the `base/` module of this sample.
 
+## Launch URL
+
+`https://instant.android.example.com/analytics`
+
 ## License
 
 ```
