@@ -68,8 +68,11 @@ public class DetailActivity extends Activity {
         Intent intent = getIntent();
         sharedElementCallback = new DetailSharedElementEnterCallback(intent);
         setEnterSharedElementCallback(sharedElementCallback);
-        initialItem = intent.getIntExtra(IntentUtil.SELECTED_ITEM_POSITION, 0);
-
+        try {
+            initialItem = Integer.parseInt(intent.getData().getLastPathSegment());
+        } catch (NumberFormatException e) {
+            initialItem = 0;
+        }
         PhotoService.getInstance().getPhotosAsync(new PhotoService.PhotoCallback() {
             @Override
             public void success(ArrayList<Photo> photos) {

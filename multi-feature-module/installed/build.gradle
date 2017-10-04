@@ -28,10 +28,6 @@ android {
         versionName rootProject.versionName
     }
 
-    dataBinding {
-        enabled true
-    }
-
     signingConfigs {
         release {
             keyAlias rootProject.keystoreProperties['keyAlias']

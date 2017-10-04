@@ -22,7 +22,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-beta6'
+        classpath 'com.android.tools.build:gradle:3.0.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -36,10 +36,10 @@ allprojects {
     }
 }
 ext {
-    buildTools = '26.0.1'
+    buildTools = '26.0.2'
     compileSdk = 26
     minSdk = 15
-    minSdkInstant = 23
+    minSdkInstant = 21
     versionCode = 1
     versionName = "1.0"
     supportLib = '26.1.0'

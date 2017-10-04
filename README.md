@@ -13,7 +13,7 @@ follow the corresponding README file.
 
 `analytics` -> Usage of Firebase Analytics
 
-`config-splits` -> Introduces Configuration splits API
+`configuration-apk` -> Introduces Configuration APKs
 
 `cookie-api` -> Usage of the Cookie API
 
@@ -22,6 +22,8 @@ follow the corresponding README file.
 `hello-kotlin` -> Hello World written in Kotlin.
 
 `hello-feature-module` -> Hello World with feature modules
+
+`install-api` -> Introduces Install API
 
 `multi-feature-module` -> More complex feature module sample
 

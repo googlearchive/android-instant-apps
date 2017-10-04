@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="usage">To see how this API is being used, open it in Android Studio and
+    take a look at the StorageActivity.kt file.</string>
+    <string name="context_pretext">This sample is running as an %s.</string>
+    <string name="app_context">Instant App</string>
+</resources>

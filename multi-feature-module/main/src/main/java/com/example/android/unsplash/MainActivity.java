@@ -31,11 +31,12 @@ import android.util.Log;
 import android.util.Pair;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.android.unsplash.data.PhotoService;
 import com.example.android.unsplash.data.model.Photo;
-import com.example.android.unsplash.base.databinding.PhotoItemBinding;
 import com.example.android.unsplash.feature.main.R;
 import com.example.android.unsplash.ui.DetailSharedElementEnterCallback;
 import com.example.android.unsplash.ui.TransitionCallback;
@@ -107,11 +108,11 @@ public class MainActivity extends Activity {
                 if (!(holder instanceof PhotoViewHolder)) {
                     return;
                 }
-                PhotoItemBinding binding = ((PhotoViewHolder) holder).getBinding();
                 MainActivity activity = MainActivity.this;
+                PhotoViewHolder pvh = (PhotoViewHolder) holder;
                 final Intent intent = getDetailActivityStartIntent(
-                        activity, position, binding);
-                final ActivityOptions activityOptions = getActivityOptions(binding);
+                        activity, position, pvh);
+                final ActivityOptions activityOptions = getActivityOptions(pvh);
 
                 activity.startActivityForResult(
                         intent, IntentUtil.REQUEST_CODE, activityOptions.toBundle());
@@ -152,10 +153,12 @@ public class MainActivity extends Activity {
             Log.w(TAG, "onActivityReenter: Holder is null, remapping cancelled.");
             return;
         }
+
         DetailSharedElementEnterCallback callback =
                 new DetailSharedElementEnterCallback(getIntent());
-        callback.setBinding(holder.getBinding());
+        callback.setView(holder.itemView);
         setExitSharedElementCallback(callback);
+
     }
 
     private void setupRecyclerView() {
@@ -185,27 +188,34 @@ public class MainActivity extends Activity {
     @NonNull
     private static Intent getDetailActivityStartIntent(Context context,
                                                        int position,
-                                                       PhotoItemBinding binding) {
+                                                       PhotoViewHolder holder) {
         final Intent intent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://multi-feature.instantappsample.com/detail"));
+                Uri.parse("https://multi-feature.instantappsample.com/detail/" + position));
         intent.setPackage(context.getPackageName());
         intent.addCategory(Intent.CATEGORY_BROWSABLE);
 
+        TextView author =
+                holder.itemView.findViewById(com.example.android.unsplash.base.R.id.author);
+
         // Working around unboxing issues with multiple dex files on platforms prior to N.
         intent.putExtra(IntentUtil.SELECTED_ITEM_POSITION, position);
-        intent.putExtra(IntentUtil.FONT_SIZE, binding.author.getTextSize());
+        intent.putExtra(IntentUtil.FONT_SIZE, author.getTextSize());
         intent.putExtra(IntentUtil.PADDING,
-                new Rect(binding.author.getPaddingLeft(),
-                        binding.author.getPaddingTop(),
-                        binding.author.getPaddingRight(),
-                        binding.author.getPaddingBottom()));
-        intent.putExtra(IntentUtil.TEXT_COLOR, binding.author.getCurrentTextColor());
+                new Rect(author.getPaddingLeft(),
+                        author.getPaddingTop(),
+                        author.getPaddingRight(),
+                        author.getPaddingBottom()));
+        intent.putExtra(IntentUtil.TEXT_COLOR, author.getCurrentTextColor());
         return intent;
     }
 
-    private ActivityOptions getActivityOptions(PhotoItemBinding binding) {
-        Pair authorPair = Pair.create(binding.author, binding.author.getTransitionName());
-        Pair photoPair = Pair.create(binding.photo, binding.photo.getTransitionName());
+    private ActivityOptions getActivityOptions(PhotoViewHolder holder) {
+        TextView author =
+                holder.itemView.findViewById(com.example.android.unsplash.base.R.id.author);
+        ImageView photo =
+                holder.itemView.findViewById(com.example.android.unsplash.base.R.id.photo);
+        Pair authorPair = Pair.create(author, author.getTransitionName());
+        Pair photoPair = Pair.create(photo, photo.getTransitionName());
         View decorView = getWindow().getDecorView();
         View statusBackground = decorView.findViewById(android.R.id.statusBarBackground);
         View navBackground = decorView.findViewById(android.R.id.navigationBarBackground);

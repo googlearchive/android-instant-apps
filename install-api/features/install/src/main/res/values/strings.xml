@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="begin_installation">Begin installation</string>
+    <string name="install_text">This sample shows how to use the install API.
+        In order to launch the installation, press the button at the bottom of the screen.</string>
+</resources>

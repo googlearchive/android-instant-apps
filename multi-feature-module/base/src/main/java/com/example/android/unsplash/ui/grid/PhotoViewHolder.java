@@ -17,19 +17,40 @@
 package com.example.android.unsplash.ui.grid;
 
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
-import com.example.android.unsplash.base.databinding.PhotoItemBinding;
+import com.example.android.unsplash.data.model.Photo;
 
 public class PhotoViewHolder extends RecyclerView.ViewHolder {
 
-    private final PhotoItemBinding binding;
+    private String author;
+    private long id;
 
-    public PhotoViewHolder(PhotoItemBinding itemBinding) {
-        super(itemBinding.getRoot());
-        binding = itemBinding;
+    public PhotoViewHolder(View view, Photo photo) {
+        super(view);
+        author = photo.author;
+        id = photo.id;
     }
 
-    public PhotoItemBinding getBinding() {
-        return binding;
+    public PhotoViewHolder(View view) {
+        super(view);
+        author = "";
+        id = 0;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

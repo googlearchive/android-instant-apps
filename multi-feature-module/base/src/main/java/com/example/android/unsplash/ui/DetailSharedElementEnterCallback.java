@@ -22,14 +22,14 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.support.annotation.NonNull;
+import android.support.v7.view.menu.MenuView;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.android.unsplash.base.R;
 import com.example.android.unsplash.IntentUtil;
-import com.example.android.unsplash.base.databinding.DetailViewBinding;
-import com.example.android.unsplash.base.databinding.PhotoItemBinding;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,8 +40,7 @@ public class DetailSharedElementEnterCallback extends SharedElementCallback {
     private final Intent intent;
     private float targetTextSize;
     private ColorStateList targetTextColors;
-    private DetailViewBinding currentDetailBinding;
-    private PhotoItemBinding currentPhotoBinding;
+    private View currentView;
     private Rect targetPadding;
 
     public DetailSharedElementEnterCallback(Intent intent) {
@@ -82,8 +81,11 @@ public class DetailSharedElementEnterCallback extends SharedElementCallback {
             author.setPadding(targetPadding.left, targetPadding.top,
                     targetPadding.right, targetPadding.bottom);
         }
-        if (currentDetailBinding != null) {
-            forceSharedElementLayout(currentDetailBinding.description);
+        if (currentView != null) {
+            View descView = currentView.findViewById(R.id.description);
+            if (descView != null) {
+                forceSharedElementLayout(descView);
+            }
         }
     }
 
@@ -94,31 +96,21 @@ public class DetailSharedElementEnterCallback extends SharedElementCallback {
         mapSharedElement(names, sharedElements, getPhoto());
     }
 
-    public void setBinding(@NonNull DetailViewBinding binding) {
-        currentDetailBinding = binding;
-        currentPhotoBinding = null;
-    }
-
-    public void setBinding(@NonNull PhotoItemBinding binding) {
-        currentPhotoBinding = binding;
-        currentDetailBinding = null;
+    public void setView(@NonNull View view) {
+        currentView = view;
     }
 
     private TextView getAuthor() {
-        if (currentPhotoBinding != null) {
-            return currentPhotoBinding.author;
-        } else if (currentDetailBinding != null) {
-            return currentDetailBinding.author;
+        if (currentView != null) {
+            return currentView.findViewById(R.id.author);
         } else {
             throw new NullPointerException("Must set a binding before transitioning.");
         }
     }
 
     private ImageView getPhoto() {
-        if (currentPhotoBinding != null) {
-            return currentPhotoBinding.photo;
-        } else if (currentDetailBinding != null) {
-            return currentDetailBinding.photo;
+        if (currentView != null) {
+            return currentView.findViewById(R.id.photo);
         } else {
             throw new NullPointerException("Must set a binding before transitioning.");
         }

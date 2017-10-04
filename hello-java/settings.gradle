@@ -1,1 +1,1 @@
-include ':instant', ':installed', ':features'
+include ':instant', ':installed', ':feature'

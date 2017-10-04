@@ -17,16 +17,16 @@
 package com.example.android.unsplash.ui.grid;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.android.unsplash.data.model.Photo;
 import com.example.android.unsplash.base.R;
-import com.example.android.unsplash.base.databinding.PhotoItemBinding;
 import com.example.android.unsplash.ui.ImageSize;
 
 import java.util.ArrayList;
@@ -36,30 +36,37 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoViewHolder> {
     private final ArrayList<Photo> photos;
     private final int requestedPhotoWidth;
     private final LayoutInflater layoutInflater;
+    private final String authorTransitionFormat;
+    private final String photoTransitionFormat;
 
     public PhotoAdapter(@NonNull Context context, @NonNull ArrayList<Photo> photos) {
         this.photos = photos;
         requestedPhotoWidth = context.getResources().getDisplayMetrics().widthPixels;
+        authorTransitionFormat = context.getResources().getString(R.string.transition_author);
+        photoTransitionFormat = context.getResources().getString(R.string.transition_photo);
         layoutInflater = LayoutInflater.from(context);
     }
 
     @Override
     public PhotoViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
-        return new PhotoViewHolder((PhotoItemBinding) DataBindingUtil.inflate(layoutInflater,
-                R.layout.photo_item, parent, false));
+        return new PhotoViewHolder(layoutInflater.inflate(R.layout.photo_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(final PhotoViewHolder holder, final int position) {
-        PhotoItemBinding binding = holder.getBinding();
         Photo data = photos.get(position);
-        binding.setData(data);
-        binding.executePendingBindings();
+        TextView authorview = holder.itemView.findViewById(R.id.author);
+        ImageView photoview = holder.itemView.findViewById(R.id.photo);
+        holder.setAuthor(data.author);
+        photoview.setTransitionName(String.format(photoTransitionFormat, data.id));
+        authorview.setText(data.author);
+        authorview.setTransitionName(String.format(authorTransitionFormat, data.id));
+        holder.setId(data.id);
         Glide.with(layoutInflater.getContext())
                 .load(data.getPhotoUrl(requestedPhotoWidth))
                 .placeholder(R.color.placeholder)
                 .override(ImageSize.NORMAL[0], ImageSize.NORMAL[1])
-                .into(holder.getBinding().photo);
+                .into((ImageView) holder.itemView.findViewById(R.id.photo));
     }
 
     @Override
