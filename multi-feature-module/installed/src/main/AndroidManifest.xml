@@ -20,5 +20,4 @@
   ~ Application ID is set in apk/build.gradle file.
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.unsplash"
-    android:targetSandboxVersion="2"/>
+    package="com.example.android.unsplash" />

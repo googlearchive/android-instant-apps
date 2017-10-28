@@ -21,11 +21,14 @@ android {
     buildToolsVersion rootProject.buildTools
 
     defaultConfig {
-        applicationId "com.google.android.instantapps.samples.configurationapks"
+        applicationId rootProject.applicationId
         minSdkVersion rootProject.minSdk
         targetSdkVersion rootProject.compileSdk
         versionCode rootProject.versionCode
         versionName rootProject.versionName
+
+        // Defaults to the installed flavor defined in features/build.gradle
+        missingDimensionStrategy 'delivery', 'installed'
     }
 
     buildTypes {
@@ -34,5 +37,5 @@ android {
 }
 
 dependencies {
-    implementation project(":features")
+    implementation project(':features')
 }

@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name">Hello Default World</string>
+    <string name="app_name">Hello World</string>
     <string name="density_title">Display Density:</string>
     <string name="density" translatable="false">any</string>
 </resources>

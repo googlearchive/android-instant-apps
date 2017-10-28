@@ -4,11 +4,7 @@ This sample app demonstrates building an installable and an instant app
 with the same behaviors. The functionality of the instant app is split
 in two features, which can be individually launched on a device.
 
-## Getting started
-
-# CURRENTLY THIS SAMPLE IS BROKEN DUE TO A [KNOWN BUG](https://issuetracker.google.com/63814741)
-
-## Launch URL
+## Launch URLs
 
 ```
 https://multi-feature.instantappsample.com/main

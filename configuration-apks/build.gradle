@@ -43,11 +43,12 @@ task clean(type: Delete) {
 }
 
 ext {
+    applicationId = 'com.google.android.instantapps.samples.configurationapks'
     buildTools = '26.0.2'
     compileSdk = 26
     minSdkInstant = 21
-    minSdk = 21
+    minSdk = 15
     versionCode = 1
     versionName = '1.0'
-    supportLib = '26.1.0'
+    supportLib = '27.0.0'
 }

@@ -21,11 +21,8 @@ android {
     buildToolsVersion rootProject.buildTools
 
     defaultConfig {
-        applicationId "com.google.android.instantapps.samples.configurationapks"
-        minSdkVersion rootProject.minSdkInstant
-        targetSdkVersion rootProject.compileSdk
-        versionCode rootProject.versionCode
-        versionName rootProject.versionName
+        // Defaults to the instant flavor defined in features/build.gradle
+        missingDimensionStrategy 'delivery', 'instant'
     }
 
     buildTypes {

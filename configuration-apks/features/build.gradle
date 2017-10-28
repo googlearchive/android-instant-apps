@@ -28,6 +28,18 @@ android {
         versionName rootProject.versionName
     }
 
+    flavorDimensions 'delivery'
+
+    productFlavors {
+        instant {
+            dimension 'delivery'
+            minSdkVersion rootProject.minSdkInstant
+        }
+        installed {
+            dimension 'delivery'
+        }
+    }
+
     buildTypes {
         debug {}
     }
@@ -40,7 +52,7 @@ android {
         language {
             enable true
             // Splits for region codes are currently not working.
-            // Regional language spilts will be re-enabled once the fix is available.
+            // Regional language splits will be re-enabled once the fix is available.
             include "de", /* "de-rAT", "de-rCH", */ "en", /* "en-rAU", */ "es", "pl"
         }
         density {
@@ -50,7 +62,8 @@ android {
 }
 
 dependencies {
-    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
     application project(':installed')
+
+    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
