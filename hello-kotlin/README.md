@@ -1,4 +1,4 @@
-# Android Instant Apps - Hello World
+# Android Instant Apps - Hello World (Kotlin)
 
 This sample app demonstrates how to build an installed and an instant app
 with the same behaviors by using Kotlin.
