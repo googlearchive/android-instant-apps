@@ -27,7 +27,7 @@ status:       PUBLISHED
 # See http://go/sample-categories
 technologies: [Android]
 categories:   [Instant Apps]
-languages:    [Java]
+languages:    [Kotlin]
 solutions:    [Mobile]
 
 # May be omitted if unpublished
