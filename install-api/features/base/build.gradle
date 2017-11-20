@@ -38,6 +38,6 @@ android {
 dependencies {
     application project(":installed")
     feature project(':features:install')
-    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
+    api "com.android.support:appcompat-v7:$supportLib"
 }
 

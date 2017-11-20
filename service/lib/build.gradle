@@ -24,6 +24,8 @@ android {
         targetSdkVersion rootProject.compileSdk
         versionCode rootProject.versionCode
         versionName rootProject.versionName
+
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
 
     buildTypes {
@@ -34,7 +36,14 @@ android {
 }
 
 dependencies {
-    implementation "com.android.support:appcompat-v7:${rootProject.supportLib}"
-    implementation "com.android.support.constraint:constraint-layout:${rootProject.constraintLayout}"
+    implementation "com.android.support:appcompat-v7:$supportLib"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayout"
     application project(':installed')
+
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:$espressoVersion"
+    androidTestImplementation "com.android.support.test:rules:$androidTestVersion"
+    androidTestImplementation "com.android.support.test:runner:$androidTestVersion"
+    androidTestImplementation "org.hamcrest:hamcrest-core:$hamcrestVersion"
 }

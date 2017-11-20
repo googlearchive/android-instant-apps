@@ -52,5 +52,5 @@ dependencies {
 
     feature project(':features:bye')
     feature project(':features:hello')
-    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
+    api "com.android.support:appcompat-v7:$supportLib"
 }

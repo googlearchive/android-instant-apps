@@ -41,4 +41,9 @@ ext {
     versionName = '1.0'
     supportLib = '27.0.1'
     constraintLayout = '1.0.2'
+
+
+    espressoVersion = "3.0.1"
+    androidTestVersion = "1.0.1"
+    hamcrestVersion = "1.3"
 }

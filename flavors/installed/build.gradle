@@ -27,18 +27,11 @@ android {
         versionName rootProject.versionName
     }
 
-    signingConfigs {
-        config {
-            keyAlias rootProject.keyAlias
-            keyPassword rootProject.keyPassword
-            storeFile rootProject.storeFile
-            storePassword rootProject.storePassword
-        }
-    }
-
     buildTypes {
         debug {}
-        release {}
+        release {
+            signingConfig = signingConfigs.debug
+        }
     }
 
     flavorDimensions "pricing"

@@ -2,8 +2,8 @@
 
 set -e  # Exit immediately if a command exits with a non-zero status.
 projects=("analytics" "configuration-apks" "cookie-api" "flavors"
-    "hello-java" "hello-feature-module" "hello-kotlin" "install-api"
-    "multi-feature-module" "service" "storage-api")
+    "hello-feature-module" "hello-java" "hello-kotlin" "install-api"
+    "service" "storage-api")
 
 for p in ${projects[@]}; do
    echo

@@ -33,7 +33,6 @@ class HelloActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button).setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://hello-feature.instantappsample.com/goodbye")).apply {
-                `package` = packageName
                 addCategory(Intent.CATEGORY_BROWSABLE)
             })
         }

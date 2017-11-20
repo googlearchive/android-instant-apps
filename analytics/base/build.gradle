@@ -35,9 +35,9 @@ android {
 
 dependencies {
     feature project(':feature')
-    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
-    api "com.google.firebase:firebase-core:${rootProject.firebaseVer}"
-    api "com.google.android.instantapps:instantapps:${rootProject.instantAppsVer}"
+    api "com.android.support:appcompat-v7:$supportLib"
+    api "com.google.firebase:firebase-core:$firebaseVer"
+    api "com.google.android.instantapps:instantapps:$instantAppsVer"
     application project(':installed')
 }
 

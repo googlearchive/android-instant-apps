@@ -101,7 +101,6 @@ class CookieStorageActivity : AppCompatActivity() {
      */
     private fun readCookie() = packageManager.instantAppCookie.toString(Charsets.UTF_8)
 
-
     /**
      * Clear the Instant App Cookie
      */

@@ -39,7 +39,6 @@ public class HelloActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("https://hello-flavors.instantappsample.com/goodbye"));
-                intent.setPackage(getPackageName());
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
                 startActivity(intent);
             }

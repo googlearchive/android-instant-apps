@@ -58,10 +58,10 @@ class CookieStorageActivity : AppCompatActivity() {
             R.id.clear_cookie -> clearCookie()
             else -> "Click handler not defined"
         }
+
+        input?.setText(result)
         Toast.makeText(this, result, Toast.LENGTH_LONG).show()
     }
-
-
 
     /**
      * Updates the Instant App Cookie if the amount of data to be stored is smaller than the

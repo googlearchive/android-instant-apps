@@ -25,6 +25,8 @@ android {
         targetSdkVersion rootProject.compileSdk
         versionCode rootProject.versionCode
         versionName rootProject.versionName
+
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {}
@@ -38,5 +40,5 @@ dependencies {
     application project(":installed")
     feature project(':features:bye')
     feature project(':features:hello')
-    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
+    api "com.android.support:appcompat-v7:$supportLib"
 }

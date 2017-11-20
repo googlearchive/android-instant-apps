@@ -37,5 +37,4 @@ public class HelloActivity extends AppCompatActivity {
             }
         });
     }
-
 }

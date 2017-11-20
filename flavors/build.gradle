@@ -44,9 +44,8 @@ ext {
     versionCode = 1
     versionName = '1.0'
     supportLib = '27.0.1'
-    // Using debug key for this sample instead of a release key.
-    keyAlias = 'androiddebugkey'
-    storeFile = file("${System.properties['user.home']}/.android/debug.keystore")
-    keyPassword = 'android'
-    storePassword = 'android'
+
+    espressoVersion = "3.0.1"
+    androidTestVersion = "1.0.1"
+    hamcrestVersion = "1.3"
 }
