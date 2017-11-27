@@ -18,6 +18,8 @@ package com.example.android.instant.analytics.feature;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -33,39 +35,9 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAnalytics mFirebaseAnalytics;
-
-    // Declare and initialize onClickListener that sends an ECOMMERCE_PURCHASE event to Analytics.
-    private View.OnClickListener mOnClickListener = new View.OnClickListener(){
-        @Override
-        public void onClick(View v) {
-
-            // Get order details.
-            EditText txtbxOrderNumber = (EditText)findViewById(R.id.txtbx_order_number);
-            int orderId = Integer.parseInt(txtbxOrderNumber.getText().toString());
-
-            EditText txtbxOrderAmount = (EditText)findViewById(R.id.txtbx_order_amount);
-            double orderAmount = Double.parseDouble(txtbxOrderAmount.getText().toString());
-
-            EditText txtbxCurrency = (EditText)findViewById(R.id.txtbx_currency);
-            String orderCurrency = txtbxCurrency.getText().toString();
-
-            // Create event details bundle.
-            Bundle bundle = new Bundle();
-            bundle.putInt(FirebaseAnalytics.Param.TRANSACTION_ID, orderId);
-            bundle.putDouble(FirebaseAnalytics.Param.VALUE, orderAmount);
-            bundle.putString(FirebaseAnalytics.Param.CURRENCY, orderCurrency);
-            mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ECOMMERCE_PURCHASE, bundle);
-
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    String.format(Locale.US,
-                            getString(R.string.order_details_format),
-                            orderId, orderAmount, orderCurrency),
-                    Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL,
-                    0, 0);
-            toast.show();
-        }
-    };
+    private EditText mTxtbxOrderNumber;
+    private EditText mTxtbxOrderAmount;
+    private EditText mTxtbxCurrency;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,11 +59,75 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseAnalytics.setUserProperty(getString(R.string.analytics_user_prop),
                 status);
 
-        // Add button click handler to raise ecommerce purchase event.
+        // Set a TextWatcher to make sure that the user doesn't attempt to
+        // submit when a EditText is empty.
+        TextWatcher enableButtonOnTextChanged = setEnableButtonOnTextChange();
+
+        mTxtbxOrderNumber = (EditText) findViewById(R.id.txtbx_order_number);
+        mTxtbxOrderNumber.addTextChangedListener(enableButtonOnTextChanged);
+
+        mTxtbxOrderAmount = (EditText) findViewById(R.id.txtbx_order_amount);
+        mTxtbxOrderAmount.addTextChangedListener(enableButtonOnTextChanged);
+
+        mTxtbxCurrency= (EditText) findViewById(R.id.txtbx_currency);
+        mTxtbxCurrency.addTextChangedListener(enableButtonOnTextChanged);
+
+        // Add button click handler to raise e-commerce purchase event.
         Button btnSendECommerceEvent = (Button)findViewById(R.id.btn_send_ecommerce_event);
+        btnSendECommerceEvent.setEnabled(false);
         btnSendECommerceEvent.setOnClickListener(mOnClickListener);
 
         textViewInstant.setText(String.format(getString(R.string.lbl_status_text),
                 status));
     }
+
+    // Declare and initialize onClickListener that sends an ECOMMERCE_PURCHASE event to Analytics.
+    private View.OnClickListener mOnClickListener = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+
+        // Get order details.
+        int orderId = Integer.parseInt(mTxtbxOrderNumber.getText().toString());
+        double orderAmount = Double.parseDouble(mTxtbxOrderAmount.getText().toString());
+        String orderCurrency = mTxtbxCurrency.getText().toString();
+
+        // Create event details bundle.
+        Bundle bundle = new Bundle();
+        bundle.putInt(FirebaseAnalytics.Param.TRANSACTION_ID, orderId);
+        bundle.putDouble(FirebaseAnalytics.Param.VALUE, orderAmount);
+        bundle.putString(FirebaseAnalytics.Param.CURRENCY, orderCurrency);
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ECOMMERCE_PURCHASE, bundle);
+
+        Toast.makeText(getApplicationContext(),
+                String.format(Locale.US,
+                        getString(R.string.order_details_format),
+                        orderId, orderAmount, orderCurrency),
+                Toast.LENGTH_SHORT)
+                .show();
+        }
+    };
+
+    // Create a TextWatcher to enable the submit button when all text fields are populated.
+    private TextWatcher setEnableButtonOnTextChange(){
+        return new TextWatcher() {
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                Button btnSendECommerceEvent = (Button) findViewById(R.id.btn_send_ecommerce_event);
+                btnSendECommerceEvent.setEnabled(!mTxtbxOrderNumber.getText().toString().isEmpty() &&
+                        !mTxtbxOrderAmount.getText().toString().isEmpty() &&
+                        !mTxtbxCurrency.getText().toString().isEmpty());
+            }
+        };
+
+    }
+
 }

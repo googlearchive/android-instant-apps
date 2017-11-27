@@ -10,5 +10,6 @@
     <string name="order_details_format" formatted="false">Order %d: %.2f %s sent</string>
     <string name="status_installed">installed</string>
     <string name="status_instant">instant</string>
+    <string name="number_input_error">Please ensure that you provide numbers for Order number and Order amount.</string>
 
 </resources>
