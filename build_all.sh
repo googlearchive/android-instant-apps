@@ -12,7 +12,7 @@ for p in ${projects[@]}; do
    echo "====================================================================="
 
    pushd $p > /dev/null  # Silent pushd
-   ./gradlew $@  assemble | sed "s@^@$p @"  # Prefix every line with directory
+   ./gradlew $@ | sed "s@^@$p @"  # Prefix every line with directory
    code=${PIPESTATUS[0]}
    if [ "$code" -ne "0" ]; then
        exit $code

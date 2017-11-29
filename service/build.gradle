@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 Google Inc. All Rights Reserved.
+ * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 
@@ -34,11 +34,11 @@ allprojects {
 }
 
 ext {
-    buildTools = '26.0.2'
-    compileSdk = 26
+    buildTools = '27.0.2'
+    compileSdk = 27
     minSdk = 23
     versionCode = 1
     versionName = '1.0'
-    supportLib = '26.1.0'
+    supportLib = '27.0.1'
     constraintLayout = '1.0.2'
 }

@@ -34,18 +34,14 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
-
 ext {
-    buildTools = '26.0.2'
-    compileSdk = 26
+    buildTools = '27.0.2'
+    compileSdk = 27
     minSdk = 15
     minSdkInstant = 21
     versionCode = 1
     versionName = '1.0'
-    supportLib = '26.1.0'
-    firebaseVer = '10.2.4'
-    instantAppsVer = '1.0.0'
+    supportLib = '27.0.1'
+    firebaseVer = '11.6.0'
+    instantAppsVer = '1.1.0'
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 Google Inc. All Rights Reserved.
+ * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@
 apply plugin: 'com.android.feature'
 
 android {
-    baseFeature true
     compileSdkVersion rootProject.compileSdk
     buildToolsVersion rootProject.buildTools
     defaultConfig {
@@ -30,10 +29,12 @@ android {
     buildTypes {
         debug {}
     }
+
+    baseFeature true
 }
 
 dependencies {
-    api "com.android.support:appcompat-v7:${rootProject.supportLib}"
-    api "com.android.support.constraint:constraint-layout:${rootProject.constraintLayout}"
+    implementation "com.android.support:appcompat-v7:${rootProject.supportLib}"
+    implementation "com.android.support.constraint:constraint-layout:${rootProject.constraintLayout}"
     application project(':installed')
 }

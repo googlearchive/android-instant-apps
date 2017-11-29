@@ -17,9 +17,11 @@
 apply plugin: 'com.android.feature'
 
 android {
+    baseFeature true
+
     compileSdkVersion rootProject.compileSdk
     buildToolsVersion rootProject.buildTools
-    baseFeature true
+
     defaultConfig {
         minSdkVersion rootProject.minSdk
         targetSdkVersion rootProject.compileSdk

@@ -17,14 +17,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 ext {
-    buildTools = '26.0.2'
-    compileSdk = 26
-    targetSdk = 26
+    buildTools = '27.0.2'
+    compileSdk = 27
+    targetSdk = 27
     minSdk = 21
     minSdkInstant = 21
     versionCode = 1
     versionName = "1.0"
-    supportLib = '26.1.0'
+    supportLib = '27.0.1'
     glide = "3.7.0"
     retrofit = "1.9.0"
     keystoreProperties = new Properties()
@@ -39,7 +39,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 allprojects {

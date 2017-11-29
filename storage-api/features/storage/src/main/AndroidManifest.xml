@@ -15,13 +15,13 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.instantappsamples.feature.storage"
+    package="com.instantappsample.feature.storage.storage"
     android:targetSandboxVersion="2">
 
     <application>
 
         <activity
-            android:name="com.instantappsamples.feature.storage.StorageApiActivity"
+            android:name=".StorageApiActivity"
             android:label="@string/title_activity_store"
             android:theme="@style/AppTheme">
 

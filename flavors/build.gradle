@@ -22,7 +22,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -37,13 +37,13 @@ allprojects {
 }
 
 ext {
-    buildTools = '26.0.2'
-    compileSdk = 26
+    buildTools = '27.0.2'
+    compileSdk = 27
     minSdk = 15
     minSdkInstant = 21
     versionCode = 1
     versionName = '1.0'
-    supportLib = '26.1.0'
+    supportLib = '27.0.1'
     // Using debug key for this sample instead of a release key.
     keyAlias = 'androiddebugkey'
     storeFile = file("${System.properties['user.home']}/.android/debug.keystore")

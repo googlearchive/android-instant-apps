@@ -15,7 +15,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.instantapps.samples.storage.base">
+    package="com.instantappsample.feature.storage.base">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

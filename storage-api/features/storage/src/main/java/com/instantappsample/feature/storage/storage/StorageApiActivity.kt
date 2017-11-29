@@ -1,4 +1,4 @@
-package com.instantappsamples.feature.storage
+package com.instantappsample.feature.storage.storage
 
 import android.os.Build
 import android.os.Bundle
@@ -48,7 +48,7 @@ class StorageApiActivity : AppCompatActivity() {
                         }
             }
         } else {
-            Toast.makeText(this, "This API is not intended to run on Android O and above.",
+            Toast.makeText(this, "This API is not intended to be used on Android O and above.",
                     Toast.LENGTH_LONG).show()
         }
     }

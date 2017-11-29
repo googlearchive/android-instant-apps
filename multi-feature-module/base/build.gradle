@@ -53,11 +53,11 @@ android {
 
 dependencies {
     api "com.android.support:appcompat-v7:$rootProject.supportLib"
-    api "com.squareup.retrofit:retrofit:$rootProject.retrofit"
     api "com.android.support:recyclerview-v7:$rootProject.supportLib"
     api "com.github.bumptech.glide:glide:$rootProject.glide"
+    api "com.squareup.retrofit:retrofit:$rootProject.retrofit"
 
+    application project(':installed')
     feature project(':main')
     feature project(':detail')
-    application project(':installed')
 }

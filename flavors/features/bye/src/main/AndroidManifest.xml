@@ -20,7 +20,8 @@
     <application>
         <activity
             android:name=".GoodbyeActivity"
-            android:label="@string/title_activity_goodbye">
+            android:label="@string/title_activity_goodbye"
+            android:theme="@style/AppTheme">
 
             <intent-filter
                 android:autoVerify="true"
