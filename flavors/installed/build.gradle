@@ -27,11 +27,16 @@ android {
         versionName rootProject.versionName
     }
 
+    // Switch between test types by swapping commented out state
+    testBuildType /* 'debug' */  'minified'
+
     buildTypes {
-        debug {}
-        release {
-            signingConfig = signingConfigs.debug
+        minified {
+            debuggable true
+            minifyEnabled true
+            signingConfig signingConfigs.debug
         }
+        debug {}
     }
 
     flavorDimensions "pricing"

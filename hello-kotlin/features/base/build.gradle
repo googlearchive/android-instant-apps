@@ -26,8 +26,17 @@ android {
         versionCode rootProject.versionCode
         versionName rootProject.versionName
     }
+
+    // Switch between test types by swapping commented out state
+    testBuildType /* 'debug' */  'minified'
+
     buildTypes {
-        release {}
+        minified {
+            debuggable true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../../proguard.pro'
+            signingConfig signingConfigs.debug
+        }
         debug {}
     }
 

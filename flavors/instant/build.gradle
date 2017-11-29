@@ -27,7 +27,7 @@ android {
         versionName rootProject.versionName
     }
     buildTypes {
-        release {}
+        minified {}
         debug {}
     }
 

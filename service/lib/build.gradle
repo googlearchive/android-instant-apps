@@ -28,7 +28,15 @@ android {
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
 
+    // Switch between test types by swapping commented out state
+    testBuildType /* 'debug' */  'minified'
+
     buildTypes {
+        minified {
+            debuggable true
+            minifyEnabled true
+            signingConfig signingConfigs.debug
+        }
         debug {}
     }
 

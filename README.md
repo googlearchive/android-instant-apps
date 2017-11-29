@@ -65,6 +65,27 @@ adb shell am start -a android.intent.action.VIEW -c android.intent.category.BROW
 cd - # takes you back to the root directory
 ```
 
+### Code minification & obfuscation
+
+Each sample's `minified` build type has code minification enabled.
+In case API surfaces are being exposed to other modules, these surfaces are being explicitly excluded from
+the obfuscation process through a proguard configuration file.
+Take a look in a module's `build.gradle` file to see what is being done for that module.
+
+#### Usage
+
+From Android Studio
+ * Open Build Variants
+ * Change each variant to a "minified" variant
+ * Run the "instant" configuration of the sample
+
+From the command line
+ * Assemble a minified build `./gradlew assembleMinified`
+ * Navigate to `instant/build/outputs/apk/*/minified`
+ * Run the instant app as described in the above section
+
+Note: For samples containing flavors the paths & variant names will be slightly different.
+
 ### Troubleshooting
 
 Refer to the [troubleshooting section](https://developer.android.com/topic/instant-apps/troubleshoot.html)

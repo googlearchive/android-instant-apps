@@ -26,8 +26,9 @@ android {
         versionCode rootProject.versionCode
         versionName rootProject.versionName
     }
+
     buildTypes {
-        release {}
+        minified {}
         debug {}
     }
 }

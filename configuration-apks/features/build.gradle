@@ -42,7 +42,16 @@ android {
         }
     }
 
+    // Switch between test types by swapping commented out state
+    testBuildType /* 'debug' */  'minified'
+
     buildTypes {
+        minified {
+            debuggable true
+            minifyEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard.pro'
+        }
         debug {}
     }
 

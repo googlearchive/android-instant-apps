@@ -29,7 +29,12 @@ android {
     }
 
     buildTypes {
-        release {}
+        minified {
+            debuggable true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard.pro'
+            signingConfig signingConfigs.debug
+        }
         debug {}
     }
 

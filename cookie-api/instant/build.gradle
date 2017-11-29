@@ -28,7 +28,7 @@ android {
     }
 
     buildTypes {
-        release {}
+        minified {}
         debug {}
     }
 

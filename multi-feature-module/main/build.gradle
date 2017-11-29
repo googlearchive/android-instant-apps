@@ -29,19 +29,14 @@ android {
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
 
-    signingConfigs {
-        debug
-        release {
-            keyAlias rootProject.keystoreProperties['keyAlias']
-            keyPassword rootProject.keystoreProperties['keyPassword']
-            storeFile file("${System.properties['user.home']}${File.separator}.android${File.separator}debug.keystore")
-            storePassword rootProject.keystoreProperties['storePassword']
-        }
-    }
+    // Switch between test types by swapping commented out state
+    testBuildType /* 'debug' */  'minified'
 
     buildTypes {
-        release {
-            signingConfig signingConfigs.release
+        minified {
+            debuggable true
+            minifyEnabled true
+            signingConfig signingConfigs.debug
         }
         debug {}
     }

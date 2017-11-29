@@ -31,7 +31,16 @@ android {
         missingDimensionStrategy 'delivery', 'installed'
     }
 
+    // Switch between test types by swapping commented out state
+    testBuildType /* 'debug' */  'minified'
+
     buildTypes {
+        minified {
+            debuggable true
+            signingConfig signingConfigs.debug
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard.pro'
+        }
         debug {}
     }
 }
