@@ -51,9 +51,7 @@ android {
     splits {
         language {
             enable true
-            // Splits for region codes are currently not working.
-            // Regional language splits will be re-enabled once the fix is available.
-            include "de", /* "de-rAT", "de-rCH", */ "en", /* "en-rAU", */ "es", "pl"
+            include "de", "de-rAT", "de-rCH", "en", "en-rAU", "es", "pl"
         }
         density {
             enable true
