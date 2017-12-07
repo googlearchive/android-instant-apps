@@ -34,5 +34,4 @@ android {
 
 dependencies {
     implementation project(':features:base')
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
