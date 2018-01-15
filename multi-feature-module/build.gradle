@@ -21,7 +21,6 @@ ext {
     compileSdk = 27
     targetSdk = 27
     minSdk = 21
-    minSdkInstant = 21
     versionCode = 1
     versionName = "1.0"
     supportLib = '27.0.1'

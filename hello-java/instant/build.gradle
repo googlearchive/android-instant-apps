@@ -20,13 +20,7 @@ android {
     compileSdkVersion rootProject.compileSdk
     buildToolsVersion rootProject.buildTools
 
-    defaultConfig {
-        applicationId "com.google.android.instantapps.samples.hello"
-        minSdkVersion rootProject.minSdkInstant
-        targetSdkVersion rootProject.compileSdk
-        versionCode rootProject.versionCode
-        versionName rootProject.versionName
-    }
+    defaultConfig {}
 
     buildTypes {
         minified {}

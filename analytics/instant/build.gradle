@@ -17,9 +17,7 @@
 apply plugin: 'com.android.instantapp'
 
 android {
-    defaultConfig {
-        minSdkVersion rootProject.minSdkInstant
-    }
+    defaultConfig {}
 }
 
 dependencies {
