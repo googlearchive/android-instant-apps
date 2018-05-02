@@ -23,7 +23,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.2.0-alpha14'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -40,9 +40,10 @@ allprojects {
 
 ext {
     applicationId = 'com.google.android.instantapps.samples.configurationapks'
-    buildTools = '27.0.2'
+    buildTools = '27.0.3'
     compileSdk = 27
     minSdk = 15
+    minSdkInstant = 21
     versionCode = 1
     versionName = '1.0'
     supportLib = '27.0.1'

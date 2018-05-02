@@ -35,7 +35,6 @@ android {
     buildTypes {
         minified {
             debuggable true
-            minifyEnabled true
             signingConfig signingConfigs.debug
         }
         debug {}

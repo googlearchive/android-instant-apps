@@ -22,7 +22,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.2.0-alpha14'
         classpath 'com.google.gms:google-services:3.1.0'
     }
 }
@@ -35,7 +35,7 @@ allprojects {
 }
 
 ext {
-    buildTools = '27.0.2'
+    buildTools = '27.0.3'
     compileSdk = 27
     minSdk = 15
     versionCode = 1
