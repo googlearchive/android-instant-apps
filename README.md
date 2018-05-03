@@ -29,6 +29,8 @@ follow the corresponding README file.
 
 `flavors` -> product flavors in an Instant App
 
+`urlless` -> An instant app sample that doesn't require URL association.
+
 
 ## Running an Instant App sample
 
