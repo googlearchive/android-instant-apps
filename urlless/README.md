@@ -1,24 +1,27 @@
 # Android Instant Apps - Without URL.
 
-This sample uses the SplitInstall API out of the PlayCore library to fetch another split.
+This sample demonstrates building a simple instant app without associated website. It uses SplitInstall API out of the PlayCore library to fetch another split.
 
 
 ## Steps to run
+```shell
 ./gradlew assembleDebug
 ia run ./instantapp/build/outputs/apk/debug/instantapp-debug.zip
+```
 
-
-## How do I get aia CLI?
+## How do I get 'ia' CLI?
 Install Instant Apps Development SDK (revision: 1.2.0) from Android SDK Manager.
 
 Add $ANDROID_HOME/extras/google/instantapps to your path
-`export PATH=$PATH:$ANDROID_HOME/extras/google/instantapps`
+```shell
+export PATH=$PATH:$ANDROID_HOME/extras/google/instantapps
+```
 
 
 ## License
 
 ```
-Copyright 2017 Google Inc.
+Copyright 2018 Google Inc.
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements. See the NOTICE file distributed with this work for
