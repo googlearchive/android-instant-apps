@@ -10,7 +10,7 @@ ia run ./instantapp/build/outputs/apk/debug/instantapp-debug.zip
 ```
 
 ## How do I get 'ia' CLI?
-Install Instant Apps Development SDK (revision: 1.2.0) from Android SDK Manager.
+Install Instant Apps Development SDK (revision: 1.3.0 or higher) from Android SDK Manager.
 
 Add $ANDROID_HOME/extras/google/instantapps to your path
 ```shell
