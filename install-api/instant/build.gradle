@@ -18,12 +18,12 @@ apply plugin: 'com.android.instantapp'
 
 android {
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
+//    buildToolsVersion rootProject.buildTools
 
     defaultConfig {}
 
     buildTypes {
-        minified {}
+//        minified {}
         debug {}
     }
 }

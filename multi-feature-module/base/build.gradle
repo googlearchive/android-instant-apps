@@ -20,7 +20,7 @@ android {
     baseFeature true
 
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
+//    buildToolsVersion rootProject.buildTools
 
     defaultConfig {
         minSdkVersion rootProject.minSdk

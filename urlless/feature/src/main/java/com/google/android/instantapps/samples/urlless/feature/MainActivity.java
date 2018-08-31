@@ -18,8 +18,8 @@ package com.google.android.instantapps.samples.urlless.feature;
 
 import android.content.Intent;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -43,27 +43,27 @@ public class MainActivity extends AppCompatActivity {
      */
     private SplitInstallStateUpdatedListener stateListener =
             new SplitInstallStateUpdatedListener() {
-        @Override
-        public void onStateUpdate(SplitInstallSessionState splitInstallSessionState) {
-            if (splitInstallSessionState.status() == SplitInstallSessionStatus.FAILED &&
-                    splitInstallSessionState.sessionId() < 0) {
-                Log.d(TAG, "Service process died");
-                return;
-            }
-            if (splitInstallSessionState.status() == SplitInstallSessionStatus.CANCELED) {
-                Log.d(TAG, "Installation cancelled");
-            } else if (splitInstallSessionState.status() == SplitInstallSessionStatus.FAILED) {
-                Log.e(TAG, "Install failed");
-            } else if (splitInstallSessionState.status() == SplitInstallSessionStatus.INSTALLED) {
-                Log.d(TAG, "Split successfully installed, launching GreetActivity");
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    // Update app context with the code and resources of the installed module.
-                    SplitInstallHelper.updateAppInfo(MainActivity.this);
+                @Override
+                public void onStateUpdate(SplitInstallSessionState splitInstallSessionState) {
+                    if (splitInstallSessionState.status() == SplitInstallSessionStatus.FAILED &&
+                            splitInstallSessionState.sessionId() < 0) {
+                        Log.d(TAG, "Service process died");
+                        return;
+                    }
+                    if (splitInstallSessionState.status() == SplitInstallSessionStatus.CANCELED) {
+                        Log.d(TAG, "Installation cancelled");
+                    } else if (splitInstallSessionState.status() == SplitInstallSessionStatus.FAILED) {
+                        Log.e(TAG, "Install failed");
+                    } else if (splitInstallSessionState.status() == SplitInstallSessionStatus.INSTALLED) {
+                        Log.d(TAG, "Split successfully installed, launching GreetActivity");
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            // Update app context with the code and resources of the installed module.
+                            SplitInstallHelper.updateAppInfo(MainActivity.this);
+                        }
+                        startActivity(new Intent(MainActivity.this, GreetActivity.class));
+                    }
                 }
-                startActivity(new Intent(MainActivity.this, GreetActivity.class));
-            }
-        }
-    };
+            };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

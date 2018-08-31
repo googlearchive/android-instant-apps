@@ -18,7 +18,7 @@ apply plugin: 'com.android.feature'
 
 android {
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
+//    buildToolsVersion rootProject.buildTools
 
     defaultConfig {
         minSdkVersion rootProject.minSdk
@@ -28,15 +28,15 @@ android {
     }
 
     // Switch between test types by swapping commented out state
-    testBuildType /* 'debug' */  'minified'
+//    testBuildType /* 'debug' */  'minified'
 
     buildTypes {
-        minified {
-            debuggable true
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../../proguard.pro'
-            signingConfig signingConfigs.debug
-        }
+//        minified {
+//            debuggable true
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../../proguard.pro'
+//            signingConfig signingConfigs.debug
+//        }
         debug {}
     }
 
