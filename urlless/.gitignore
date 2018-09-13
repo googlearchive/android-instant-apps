@@ -1,18 +1,34 @@
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-/.idea/caches
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+out/
+build/
+
+# Windows thumbnail db
 .DS_Store
-build
-captures
-.externalNativeBuild
 
-# Do not commit plain release keys
-signing/app-release.jks
-signing/play-account.p12
-signing/play-account.json
+# IDEA/Android Studio project files, because
+# the project can be imported from settings.gradle
+*.iml
+.idea/*
+!.idea/copyright
+!.idea/codeStyles/codeStyleConfig.xml
 
-# Do not commit firebase config
-google-services.json
+# Gradle cache
+.gradle
+
+# Sandbox stuff
+_sandbox
+
+# Android Studio captures folder
+captures/
