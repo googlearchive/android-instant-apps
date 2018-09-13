@@ -17,7 +17,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 ext {
-    buildTools = '27.0.3'
     compileSdk = 28
     targetSdk = 28
     minSdk = 21

@@ -6,64 +6,53 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="180e768c-c6de-4142-8e6c-ab722cf33dcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_android_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_core_common_1_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_common_1_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_annotations_27_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_compat_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_core_ui_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_core_utils_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_fragment_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_github_bumptech_glide_glide_3_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_google_code_gson_gson_2_3_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_squareup_retrofit_retrofit_1_9_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/base/base.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/detail/detail.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/installed/installed.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/instant/instant.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-feature-module/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install-api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../install-api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install-api/features/base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../install-api/features/base/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install-api/features/install/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../install-api/features/install/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install-api/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../install-api/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install-api/installed/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../install-api/installed/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install-api/instant/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../install-api/instant/build.gradle" afterDir="false" />
+    <list default="true" id="1de14053-6c7d-4833-b89b-6104d0c81870" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_android_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_core_common_1_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_common_1_0_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_annotations_27_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_compat_27_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_core_ui_27_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_core_utils_27_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_fragment_27_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_0_1_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../multi-feature-module/base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/base/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../multi-feature-module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../multi-feature-module/detail/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/detail/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multi-feature-module/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../multi-feature-module/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../multi-feature-module/installed/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/installed/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../multi-feature-module/instant/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/instant/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../multi-feature-module/instant/instant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/instant/instant.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../multi-feature-module/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../multi-feature-module/main/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/base/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_play_core_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/base/base.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/feature/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/src/main/java/com/google/android/instantapps/samples/urlless/feature/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/feature/src/main/java/com/google/android/instantapps/samples/urlless/feature/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/feature.iml" beforeDir="false" afterPath="$PROJECT_DIR$/feature/feature.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greet/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/greet/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greet/greet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/greet/greet.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,106 +76,42 @@
     <session id="1565489376">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="6" />
-          <entry key="java" value="1" />
+          <entry key="gradle" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="6" />
-          <entry key="JAVA" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="gradle" value="22" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Groovy" value="22" />
+          <entry key="Groovy" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feature/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#593#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/instantapp/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/feature/src/main/java/com/google/android/instantapps/samples/urlless/feature/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-311">
-              <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <folding>
-                <element signature="e#0#593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greet/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+            <state relative-caret-position="285">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="e#0#593#0" expanded="true" />
               </folding>
@@ -199,14 +124,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dynamic-</find>
-      <find>dynamic-feature</find>
-      <find>splitinstallm</find>
-      <find>SplitInstallManager</find>
-      <find>splitInstallManager</find>
     </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -6825,21 +6743,12 @@
       </map>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/feature/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/base/build.gradle" />
-        <option value="$PROJECT_DIR$/greet/build.gradle" />
-        <option value="$PROJECT_DIR$/feature/src/main/java/com/google/android/instantapps/samples/urlless/feature/MainActivity.java" />
-      </list>
-    </option>
+  <component name="GradlePerProjectExperimentalSettings">
+    <option name="USE_SINGLE_VARIANT_SYNC" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1199" />
+    <option name="width" value="1440" />
     <option name="height" value="829" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -6870,74 +6779,24 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="feature" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="greet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="greet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="greet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="urlless" type="b2602c69:ProjectViewProjectNode" />
-              <item name="urlless" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="instantapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="/Library/Android/sdk" />
-    <property name="device.picker.selection" value="HT72V0200057" />
+    <property name="device.picker.selection" value="Pixel_2_API_28" />
     <property name="do.not.display.dialog.enable.single.variant.sync" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="experimental" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -6995,6 +6854,7 @@
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
@@ -7047,6 +6907,7 @@
       <module name="instantapp" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
@@ -7119,40 +6980,40 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="180e768c-c6de-4142-8e6c-ab722cf33dcf" name="Default Changelist" comment="" />
-      <created>1535740071210</created>
+      <changelist id="1de14053-6c7d-4833-b89b-6104d0c81870" name="Default Changelist" comment="" />
+      <created>1536232157143</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1535740071210</updated>
+      <updated>1536232157143</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1436" height="829" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.2733142" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Android Profiler" />
-      <window_info anchor="bottom" id="Find" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32913166" />
-      <window_info active="true" anchor="bottom" id="Event Log" sideWeight="0.50071734" side_tool="true" visible="true" weight="0.32913166" />
-      <window_info anchor="bottom" id="Build" sideWeight="0.49928263" visible="true" weight="0.32913166" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3297568" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32913166" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -7161,64 +7022,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/instantapp/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="285">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#593#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        <state relative-caret-position="209">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
             <element signature="e#0#593#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greet/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <folding>
-            <element signature="e#0#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature/src/main/java/com/google/android/instantapps/samples/urlless/feature/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311">
-          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
         </state>
       </provider>
     </entry>
