@@ -13,7 +13,6 @@ bin/
 gen/
 out/
 build/
-multi-feature-module/.idea/
 
 # Windows thumbnail db
 .DS_Store
