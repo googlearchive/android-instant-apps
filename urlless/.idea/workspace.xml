@@ -6752,6 +6752,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="android_arch&#9;FILE&#9;file:///Users/igorganapolsky/workspace/git/google/android-instant-apps/urlless/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" />
     <property name="android.sdk.path" value="/Library/Android/sdk" />
     <property name="device.picker.selection" value="Pixel_2_API_28" />
     <property name="do.not.display.dialog.enable.single.variant.sync" value="true" />
