@@ -18,7 +18,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
+//    buildToolsVersion rootProject.buildTools
 
     defaultConfig {
         applicationId "com.google.android.instantapps.samples.install"
@@ -29,14 +29,14 @@ android {
     }
 
     // Switch between test types by swapping commented out state
-    testBuildType /* 'debug' */  'minified'
+//    testBuildType /* 'debug' */  'minified'
 
     buildTypes {
-        minified {
-            debuggable true
-            minifyEnabled true
-            signingConfig signingConfigs.debug
-        }
+//        minified {
+//            debuggable true
+//            minifyEnabled true
+//            signingConfig signingConfigs.debug
+//        }
         debug {}
     }
 }

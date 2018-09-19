@@ -1,0 +1,30 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+out/
+build/
+
+# Windows thumbnail db
+.DS_Store
+
+# IDEA/Android Studio project files
+*.iml
+.idea/*
+!.idea/copyright
+!.idea/codeStyles/codeStyleConfig.xml
+
+# Gradle cache
+.gradle
+
+# Android Studio captures folder
+captures/

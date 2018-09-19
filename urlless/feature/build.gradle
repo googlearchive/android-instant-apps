@@ -17,11 +17,11 @@
 apply plugin: 'com.android.feature'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1"
     }
@@ -30,5 +30,5 @@ android {
 dependencies {
     implementation project(':base')
     implementation project(':greet')
-    implementation 'com.google.android.play:core:1.2.0'
+    implementation 'com.google.android.play:core:1.3.4'
 }
