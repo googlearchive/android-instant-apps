@@ -8,8 +8,8 @@ installed and launched on a device.
 ## Launch URLs
 
 ```
-https://hello.instantappsample.com/hello -> HelloActivity
-https://hello.instantappsample.com/bye -> GoodbyeActivity
+https://hello-feature.instantappsample.com/hello -> HelloActivity
+https://hello-feature.instantappsample.com/goodbye -> GoodbyeActivity
 ```
 
 ## License

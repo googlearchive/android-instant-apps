@@ -5,7 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
-import com.google.android.instantapps.InstantApps
+import com.google.android.gms.instantapps.InstantApps
 
 /**
  * An Activity that shows usage of the Install API, [documented here](https://developer.android.com/topic/instant-apps/reference.html#showinstallprompt).
@@ -30,7 +30,7 @@ class InstallApiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_install)
 
-        val isInstantApp = InstantApps.isInstantApp(this)
+        val isInstantApp = InstantApps.getPackageManagerCompat(this).isInstantApp();
 
         findViewById<Button>(R.id.start_installation).apply {
             isEnabled = isInstantApp
