@@ -17,8 +17,7 @@ build/
 # Windows thumbnail db
 .DS_Store
 
-# IDEA/Android Studio project files, because
-# the project can be imported from settings.gradle
+# IDEA/Android Studio project files
 *.iml
 .idea/*
 !.idea/copyright
@@ -26,9 +25,6 @@ build/
 
 # Gradle cache
 .gradle
-
-# Sandbox stuff
-_sandbox
 
 # Android Studio captures folder
 captures/
