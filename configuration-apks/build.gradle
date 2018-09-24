@@ -16,14 +16,14 @@
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.kotlin_version = '1.1.51'
+    ext.kotlin_version = '1.2.71'
     repositories {
         google()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-alpha14'
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha11'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -40,13 +40,12 @@ allprojects {
 
 ext {
     applicationId = 'com.google.android.instantapps.samples.configurationapks'
-    buildTools = '27.0.3'
-    compileSdk = 27
+    compileSdk = 28
     minSdk = 15
     minSdkInstant = 21
     versionCode = 1
     versionName = '1.0'
-    supportLib = '27.0.1'
+    supportLib = '28.0.0'
 
     espressoVersion = "3.0.1"
     androidTestVersion = "1.0.1"

@@ -19,7 +19,6 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
     defaultConfig {
         minSdkVersion rootProject.minSdk
         targetSdkVersion rootProject.compileSdk
@@ -35,7 +34,6 @@ android {
     buildTypes {
         minified {
             debuggable true
-            minifyEnabled true
             signingConfig signingConfigs.debug
         }
         debug {}

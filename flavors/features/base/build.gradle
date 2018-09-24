@@ -18,7 +18,6 @@ apply plugin: 'com.android.feature'
 
 android {
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
 
     defaultConfig {
         minSdkVersion rootProject.minSdk
@@ -28,7 +27,7 @@ android {
     }
 
     // Switch between test types by swapping commented out state
-    testBuildType /* 'debug' */  'minified'
+    testBuildType /* 'debug' */ 'minified'
 
     buildTypes {
         minified {

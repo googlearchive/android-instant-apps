@@ -18,7 +18,6 @@ apply plugin: 'com.android.feature'
 
 android {
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
 
     defaultConfig {
         minSdkVersion rootProject.minSdk
@@ -48,7 +47,6 @@ android {
     buildTypes {
         minified {
             debuggable true
-            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), '../../proguard.pro'
             signingConfig signingConfigs.debug
         }
