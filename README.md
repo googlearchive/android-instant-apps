@@ -11,6 +11,8 @@ follow the corresponding README file.
 
 ## Available samples
 
+`aab-simple` -> Basic instant app ready to be built into Android App Bundle.
+
 `analytics` -> Usage of Firebase Analytics
 
 `configuration-apk` -> Introduces Configuration APKs
@@ -117,4 +119,3 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 ```
-
