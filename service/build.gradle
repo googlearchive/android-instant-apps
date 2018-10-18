@@ -22,7 +22,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-alpha14'
+        classpath 'com.android.tools.build:gradle:3.2.0'
     }
 }
 
@@ -34,7 +34,6 @@ allprojects {
 }
 
 ext {
-    buildTools = '27.0.3'
     compileSdk = 27
     minSdk = 23
     versionCode = 1

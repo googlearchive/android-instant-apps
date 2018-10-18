@@ -18,7 +18,6 @@ apply plugin: 'com.android.instantapp'
 
 android {
     compileSdkVersion rootProject.compileSdk
-    buildToolsVersion rootProject.buildTools
 
     defaultConfig {
         // Defaults to the instant flavor defined in features/build.gradle
