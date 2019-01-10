@@ -32,6 +32,6 @@ dependencies {
     feature project(':feature')
     feature project(':greet')
 
-    api 'com.android.support:appcompat-v7:27.1.1'
-    api 'com.android.support.constraint:constraint-layout:1.1.0'
+    api 'androidx.appcompat:appcompat:1.0.2'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

@@ -16,7 +16,7 @@
 
 package com.google.android.instantapps.samples.greet;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class GreetActivity extends AppCompatActivity {
