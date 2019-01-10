@@ -22,12 +22,13 @@ ext {
     minSdk = 21
     versionCode = 1
     versionName = "1.0"
-    supportLib = '28.0.0'
+    appCompat = '1.0.2'
+    recyclerView = '1.0.0'
     glide = "3.7.0"
     retrofit = "1.9.0"
 
-    espressoVersion = "3.0.1"
-    androidTestVersion = "1.0.1"
+    espressoVersion = '3.1.0'
+    androidTestVersion = '1.1.0'
     hamcrestVersion = "1.3"
 }
 

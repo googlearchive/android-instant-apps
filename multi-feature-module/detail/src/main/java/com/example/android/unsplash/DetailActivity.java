@@ -19,7 +19,7 @@ package com.example.android.unsplash;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.TransitionSet;

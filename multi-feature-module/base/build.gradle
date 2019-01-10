@@ -48,8 +48,8 @@ android {
 }
 
 dependencies {
-    api "com.android.support:appcompat-v7:$supportLib"
-    api "com.android.support:recyclerview-v7:$supportLib"
+    api "androidx.appcompat:appcompat:$appCompat"
+    api "androidx.recyclerview:recyclerview:$recyclerView"
     api "com.github.bumptech.glide:glide:$glide"
     api "com.squareup.retrofit:retrofit:$retrofit"
 
