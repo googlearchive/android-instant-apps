@@ -22,7 +22,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-alpha16'
+        classpath 'com.android.tools.build:gradle:3.2.1-alpha16'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -37,11 +37,11 @@ allprojects {
 }
 
 ext {
-    compileSdk = 27
+    compileSdk = 28
     minSdk = 15
     versionCode = 1
     versionName = '1.0'
-    supportLib = '27.0.1'
+    supportLib = '28.0.0'
 
     espressoVersion = "3.0.1"
     androidTestVersion = "1.0.1"
