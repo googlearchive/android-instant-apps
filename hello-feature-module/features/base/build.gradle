@@ -25,7 +25,7 @@ android {
         versionCode rootProject.versionCode
         versionName rootProject.versionName
 
-        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
     // Switch between test types by swapping commented out state
@@ -48,5 +48,5 @@ dependencies {
     application project(":installed")
     feature project(':features:bye')
     feature project(':features:hello')
-    api "com.android.support:appcompat-v7:$supportLib"
+    api "androidx.appcompat:appcompat:$appCompat"
 }
