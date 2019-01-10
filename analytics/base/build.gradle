@@ -44,7 +44,7 @@ android {
 
 dependencies {
     feature project(':feature')
-    api "com.android.support:appcompat-v7:$supportLib"
+    api "androidx.appcompat:appcompat:$appCompat"
     api "com.google.firebase:firebase-core:$firebaseVer"
     api "com.google.android.instantapps:instantapps:$instantAppsVer"
     application project(':installed')
