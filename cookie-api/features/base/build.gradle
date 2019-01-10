@@ -60,8 +60,8 @@ android {
 dependencies {
     application project(':installed')
     feature project(':features:cookie')
-    api "com.android.support:appcompat-v7:$supportLib"
+    api "androidx.appcompat:appcompat:$appCompat"
 
     // This library has to be in the base module for now until a bug with manifest merging is fixed.
-    playServicesApi 'com.google.android.gms:play-services-instantapps:11.4.0'
+    playServicesApi 'com.google.android.gms:play-services-instantapps:16.0.1'
 }
