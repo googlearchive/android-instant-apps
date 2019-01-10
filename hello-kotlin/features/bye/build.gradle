@@ -25,7 +25,7 @@ android {
         versionCode rootProject.versionCode
         versionName rootProject.versionName
 
-        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
     // Switch between test types by swapping commented out state
@@ -43,9 +43,9 @@ android {
 dependencies {
     implementation project(':features:base')
 
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
-    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$espressoVersion"
-    androidTestImplementation "com.android.support.test:rules:$androidTestVersion"
-    androidTestImplementation "com.android.support.test:runner:$androidTestVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espressoVersion"
+    androidTestImplementation "androidx.test:rules:$androidTestVersion"
+    androidTestImplementation "androidx.test:runner:$androidTestVersion"
     androidTestImplementation "org.hamcrest:hamcrest-core:$hamcrestVersion"
 }

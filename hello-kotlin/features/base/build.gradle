@@ -47,6 +47,6 @@ dependencies {
     feature project(':features:bye')
     feature project(':features:hello')
 
-    api "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    api "com.android.support:appcompat-v7:$supportLib"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "androidx.appcompat:appcompat:$appCompat"
 }
