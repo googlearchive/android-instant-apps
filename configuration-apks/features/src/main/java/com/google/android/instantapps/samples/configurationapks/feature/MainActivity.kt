@@ -17,7 +17,7 @@
 package com.google.android.instantapps.samples.configurationapks.feature
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  * This Activity displays the current density and language configuration.
