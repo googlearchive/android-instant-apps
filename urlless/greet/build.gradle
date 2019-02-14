@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-apply plugin: 'com.android.feature'
+apply plugin: 'com.android.dynamic-feature'
 
 android {
     compileSdkVersion 27
@@ -29,5 +29,5 @@ android {
 }
 
 dependencies {
-    implementation project(':base')
+    implementation project(':app')
 }

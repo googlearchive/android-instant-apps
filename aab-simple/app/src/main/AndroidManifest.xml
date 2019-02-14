@@ -17,7 +17,6 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    android:targetSandboxVersion="2"
     package="com.google.android.instantapps.samples.instantenabledandroidappbundle">
 
 <!-- The following declaration enables this module to be served instantly -->

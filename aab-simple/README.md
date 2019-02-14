@@ -8,7 +8,6 @@ have set up `AndroidManifest.xml` correctly:
 1. Amend `<manifest>` tag by adding the following:
 ```
 xmlns:dist="http://schemas.android.com/apk/distribution"
-android:targetSandboxVersion="2"
 ```
 2. Inside `<manifest>` tag, add the following declaration:
 ```
@@ -21,7 +20,6 @@ Which would make your manifest look something like:
 ```
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    android:targetSandboxVersion="2"
     package="com.google.android.instantapps.samples.instantenabledandroidappbundle">
 
     <dist:module
@@ -36,7 +34,9 @@ Which would make your manifest look something like:
 
 3. In Android Studio, build the bundle: `Build` > `Generate Signed Bundle / APK…` > `Bundle`
 
-4. In the Android Instant Apps tab on Play Developer Console, upload signed .aab.
+4. On the Play Developer Console, only upload this bundle once to the installed track. For the
+instant track, you can simply select "Add from Library" to import the already uploaded
+instant-enabled bundle.
 
 ## License
 

@@ -4,18 +4,8 @@ This sample demonstrates building a simple instant app without associated websit
 
 
 ## Steps to run
-```shell
-./gradlew assembleDebug
-ia run ./instantapp/build/outputs/apk/debug/instantapp-debug.zip
-```
-
-## How do I get 'ia' CLI?
-Install Instant Apps Development SDK (revision: 1.3.0 or higher) from Android SDK Manager.
-
-Add $ANDROID_HOME/extras/google/instantapps to your path
-```shell
-export PATH=$PATH:$ANDROID_HOME/extras/google/instantapps
-```
+In the run configuration for Android Studio, check Deploy as instant app. In the launch options,
+select "Do Nothing". Then run the configuration to launch the application as an instant app.
 
 
 ## License

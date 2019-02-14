@@ -109,7 +109,7 @@ public class DetailActivity extends Activity {
         });
 
         viewPager.setPageMargin(getResources().getDimensionPixelSize(
-                com.example.android.unsplash.base.R.dimen.padding_mini));
+                com.example.android.unsplash.R.dimen.padding_mini));
         viewPager.setPageMarginDrawable(R.drawable.page_margin);
     }
 

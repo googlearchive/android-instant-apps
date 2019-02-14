@@ -180,7 +180,7 @@ public class MainActivity extends Activity {
         });
         grid.addItemDecoration(new GridMarginDecoration(
                 getResources().getDimensionPixelSize(
-                        com.example.android.unsplash.base.R.dimen.grid_item_spacing)));
+                        com.example.android.unsplash.R.dimen.grid_item_spacing)));
         grid.setHasFixedSize(true);
 
     }
@@ -195,7 +195,7 @@ public class MainActivity extends Activity {
         intent.addCategory(Intent.CATEGORY_BROWSABLE);
 
         TextView author =
-                holder.itemView.findViewById(com.example.android.unsplash.base.R.id.author);
+                holder.itemView.findViewById(com.example.android.unsplash.R.id.author);
 
         // Working around unboxing issues with multiple dex files on platforms prior to N.
         intent.putExtra(IntentUtil.SELECTED_ITEM_POSITION, position);
@@ -211,9 +211,9 @@ public class MainActivity extends Activity {
 
     private ActivityOptions getActivityOptions(PhotoViewHolder holder) {
         TextView author =
-                holder.itemView.findViewById(com.example.android.unsplash.base.R.id.author);
+                holder.itemView.findViewById(com.example.android.unsplash.R.id.author);
         ImageView photo =
-                holder.itemView.findViewById(com.example.android.unsplash.base.R.id.photo);
+                holder.itemView.findViewById(com.example.android.unsplash.R.id.photo);
         Pair authorPair = Pair.create(author, author.getTransitionName());
         Pair photoPair = Pair.create(photo, photo.getTransitionName());
         View decorView = getWindow().getDecorView();

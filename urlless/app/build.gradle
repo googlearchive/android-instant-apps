@@ -35,10 +35,12 @@ android {
            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
        }
     }
+    dynamicFeatures = [":feature", ":greet"]
+
 
 }
 
 dependencies {
-    implementation project(':feature')
-    implementation project(':base')
+    api 'androidx.appcompat:appcompat:1.0.2'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

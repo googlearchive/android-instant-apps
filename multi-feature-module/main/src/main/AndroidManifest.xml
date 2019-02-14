@@ -15,7 +15,13 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.unsplash.feature.main" >
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.android.unsplash.feature.main">
+
+    <dist:module dist:instant="true" dist:onDemand="false"
+        dist:title="@string/title_main_feature">
+        <dist:fusing dist:include="true" />
+    </dist:module>
 
     <application>
         <activity

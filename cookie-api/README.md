@@ -31,9 +31,9 @@ the Framework API whereas the other one uses the InstantApps Play Services API.
 
 ### Testing the API with this sample
 
-1. Run the _instant_ configuration
+1. Run the application by checking the "deploy as instant app" in the run configuration
 2. Store some data
-3. Run the _installed_ configuration
+3. Run the application by unchecking the "deploy as instant app" in the run configuration
 4. Retrieve the data stored earlier
 
 ## Launch URL

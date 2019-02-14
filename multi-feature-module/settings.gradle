@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-include ':instant', ':installed', ':base', ':detail', ':main'
+include ':app', ':detail', ':main'

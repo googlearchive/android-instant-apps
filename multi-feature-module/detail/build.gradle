@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-apply plugin: 'com.android.feature'
+apply plugin: 'com.android.dynamic-feature'
 
 android {
     compileSdkVersion rootProject.compileSdk
@@ -24,12 +24,7 @@ android {
         targetSdkVersion rootProject.targetSdk
         versionCode rootProject.versionCode
         versionName rootProject.versionName
-
-        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
-
-    // Switch between test types by swapping commented out state
-    testBuildType /* 'debug' */  'minified'
 
     buildTypes {
         minified {
@@ -46,11 +41,5 @@ android {
 }
 
 dependencies {
-    implementation project(':base')
-
-    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
-    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espressoVersion"
-    androidTestImplementation "androidx.test:rules:$androidTestVersion"
-    androidTestImplementation "androidx.test:runner:$androidTestVersion"
-    androidTestImplementation "org.hamcrest:hamcrest-core:$hamcrestVersion"
+    implementation project(':app')
 }

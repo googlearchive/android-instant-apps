@@ -15,9 +15,15 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.android.unsplash.feature.detail" >
 
-    <application>
+    <dist:module dist:instant="true" dist:onDemand="false"
+        dist:title="@string/title_detail_feature">
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+<application>
         <activity
             android:name="com.example.android.unsplash.DetailActivity"
             android:label="@string/app_name"
